@@ -492,6 +492,15 @@ int main(void)
 		for(;;){}
 	}
 
+	// Wait for 5 seconds (camera boot)
+	for(int i = 0; i < 10; ++i)
+	{
+		Cy_SysLib_Delay(500);
+		cyhal_gpio_toggle((cyhal_gpio_t)LED1);
+		cyhal_gpio_toggle((cyhal_gpio_t)LED2);
+		cyhal_gpio_toggle((cyhal_gpio_t)LED3);
+	}
+
 	// Create communication queues
 	f450_to_ble_queue = xQueueCreate(F450_TO_BLE_QUEUE_EL_COUNT, F450_TO_BLE_QUEUE_EL_SIZE);
 	if (f450_to_ble_queue == 0)
