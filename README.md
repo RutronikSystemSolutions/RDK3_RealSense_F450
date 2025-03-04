@@ -36,7 +36,7 @@ Because of the size of the RealSense ID SDK, the RDK3 should be provisioned usin
 
 Apply 3.3V on the power supply of the RealSense F450 and then plug a USB cable on the RDK3.
 
-Open the iOS app and navigate to the "F450 from Intel RealSense" menu.
+Open the [Rutronik System Solutions RDK3 iOS app](https://apps.apple.com/fr/app/rutronik-system-solutions-rdk3/id6450926995?l=en-GB) and navigate to the "F450 from Intel RealSense" menu.
 
 You then have 3 options:
 - Authenticate: The module checks if a face is in front, and then check if the user is in the database
